@@ -4,9 +4,9 @@ const bodyParser = require('body-parser')
 const morgan =require('morgan')
 const userroute = require('./routes/user')
 
-mongoose.connect('mongodb+srv://admin:admin@cluster0.9qxko.mongodb.net/user?retryWrites=true&w=majority',{useNewUrlParser: true, useUnifiedTopology:true})
+mongoose.connect('mongodb://localhost:27017/User',{useNewUrlParser: true, useUnifiedTopology:true})
 const db = mongoose.connection
-
+//'mongodb+srv://admin:admin@cluster0.9qxko.mongodb.net/user?retryWrites=true&w=majority'
 db.on('error', (err) => {
     console.log(err)
 })
@@ -20,6 +20,10 @@ app.use(morgan('dev'))
 app.use(bodyParser.urlencoded({extended: true}))
 app.use(bodyParser.json())
 app.use('/api/user', userroute)
+
+//setup template
+
+app.set('view engine','ejs')
 
 const PORT = process.env.PORT || 3000
 
