@@ -1,4 +1,13 @@
 <h2>List user</h2>
+<a href="/logout" class="dropdown-item logout">
+    <i class="ni ni-user-run"></i>
+    <span class="logout">Logout</span>
+</a>
+<br>
+<a href="/changepass" class="dropdown-item logout">
+    <i class="ni ni-user-run"></i>
+    <span class="logout">ChangePassword</span>
+</a>
 <ul>
     <% for (var i=0;i < users.length;i++ ){ %>
         <li><%= users[i].username%></li>

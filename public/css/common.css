@@ -1,0 +1,34 @@
+#navbar-main {
+    padding-top: 0px;
+}
+
+#ecommerce_table_wrapper, #role_table_wrapper, #product_table_wrapper, #shop_table_wrapper,
+#user_table_wrapper,  #product_type_table_wrapper {
+    padding: 20px;
+}
+
+
+#ecommerce_table_previous>a.page-link, #ecommerce_table_next>a.page-link  {
+    padding: 10px 40px;
+}
+
+#role_table_previous>a.page-link, #role_table_next>a.page-link  {
+    padding: 10px 40px;
+}
+
+#product_table_previous>a.page-link, #product_table_next>a.page-link  {
+    padding: 10px 40px;
+}
+
+#shop_table_previous>a.page-link, #shop_table_next>a.page-link  {
+    padding: 10px 40px;
+}
+
+#user_table_previous>a.page-link, #user_table_next>a.page-link  {
+    padding: 10px 40px;
+}
+
+#product_type_table_previous>a.page-link, #product_type_table_next>a.page-link  {
+    padding: 10px 40px;
+}
+

@@ -1,0 +1,231 @@
+.container-map {
+    margin-top: -10px;
+    padding: 20px;
+    padding-top: 0px;
+}
+
+
+#plcMap { 
+    min-height: 800px; 
+    width: 100%;
+}
+
+#listDeviceMap {
+    width: 100%;
+    border-radius: 5px;
+    background-color: white;
+    padding: 10px;
+}
+
+#select_device_map {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+.btn-map-device {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+.display_label_device {
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    text-align: left;
+}
+
+.list-device-map {
+    padding-left: 0px;
+}
+
+.container-device-map {
+    width: 100%;
+    height: 700px;
+    margin-left: 25%;
+    background:url("/assets/images/map_viet_name2.jpg") no-repeat;
+    background-size: 45% 100%;
+}
+
+#bg_device_map {
+    position: relative;
+}
+
+.bg_device {
+    position: absolute;
+    width: 50px;
+    text-align: center;
+}
+
+
+.device_info {
+    padding-top: 50px;
+    padding-left: 5px;
+    width: 40%;
+    margin-left: 45%;
+    height: 700px;
+    border: 1px solid gray;
+    text-align: left;
+}
+
+.name_device {
+    font-size: 10px;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+}
+
+.box_device_info {
+    z-index: 9999;
+    position: absolute;
+}
+
+
+.title_info {
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.info_param {
+    font-size: 18px;
+    font-weight: bold;
+    color: blue;
+}
+
+.online {
+    font-weight: bold;
+    color: green;
+    font-size: 18px;
+}
+
+.offline {
+    font-weight: bold;
+    color: gray;
+    font-size: 18px;
+}
+
+.stop_device {
+    font-weight: bold;
+    color: red;
+    font-size: 18px;
+}
+
+.zoom_map {
+    font-size: 40px;
+    cursor: pointer;
+    margin-top: -20px;
+}
+
+.box_device_name {
+    color: blueviolet;
+}
+
+
+/* map css */
+.box_display_map {
+    width: 300px;
+}
+
+.id_device_map_display {
+    font-size: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.name_device_map_display{
+    margin-top: 5px;
+    font-size: 18px;
+    text-align: center;
+    color: cadetblue;
+}
+
+.box_parameter_map {
+    display: flex;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 15px;
+}
+
+.title_parameter_display {
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.parameter_display {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.time_latest_update {
+    font-size: 14px;
+}
+
+.time_latest_update > span {
+    font-weight: bold;
+}
+
+/* 
+  ##Device = Desktops
+  ##Screen = 1281px to higher resolution desktops
+*/
+
+@media (min-width: 1281px) {
+  
+    #plcMap {
+        min-height: 800px; 
+    }
+
+    #listDeviceMap {
+        min-height: 800px; 
+    }
+}
+  
+@media (min-width: 768px) and (max-width: 1281px) {
+
+    #plcMap {
+        min-height: 600px; 
+    }
+
+    #listDeviceMap {
+        min-height: 600px; 
+    }
+
+}
+  
+  
+/* 
+##Device = Low Resolution Tablets, Mobiles (Landscape)
+##Screen = B/w 481px to 767px
+*/
+
+@media (min-width: 481px) and (max-width: 767px) {
+
+    #plcMap {
+        min-height: 500px; 
+    }
+
+    #listDeviceMap {
+        min-height: 500px; 
+    }
+}
+
+/* 
+##Device = Most of the Smartphones Mobiles (Portrait)
+##Screen = B/w 320px to 479px
+*/
+
+@media (min-width: 320px) and (max-width: 480px) {
+    #plcMap {
+        min-height: 500px; 
+    }
+
+    #listDeviceMap {
+        min-height: 500px; 
+    }
+
+}

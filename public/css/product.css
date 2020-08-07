@@ -1,0 +1,12 @@
+.upload_files {
+    cursor: pointer;
+}
+
+#input_hinh_anh, #edit_input_hinh_anh {
+    display: none;
+}
+
+.product-image {
+    max-width: 200px;
+    max-height: 200px;
+}
